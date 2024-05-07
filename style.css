@@ -1,0 +1,78 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"] {
+    width: 35%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #8a2be2;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+.input-area{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.compute-button {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #8a2be2; 
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.compute-button:hover {
+    background-color: #6b1d7d; 
+    transform: translateY(-2px);
+}
+
+.compute-button:active {
+    background-color: #4a154b;
+    box-shadow: 0 2px #4a154b;
+    transform: translateY(2px);
+}
+
+
+.water-wall-container, .only-water-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 45vh;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+#main-container {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+#chart-container {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}
+#chart-container-water {
+    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}

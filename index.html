@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Water Tank</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+</head>
+<body>
+    <div class="header"><h1>Water Tank Problem Solver</h1></div>
+    <div class="input-area">
+        <input type="text" id="inputArray"  name="inputArray" placeholder="e.g. 0,4,0,0,0,6,0,6,4,0">
+        <button class="compute-button" id="arrayBtn" onclick="processArray()">Calculate Water</button>
+    </div>
+    <div class="water-wall-container">
+        <div id="chart-container"></div>
+    </div>
+    <div class="only-water-container">
+        <h4><span style="margin-left: 120px;" id="waterAmount"></span></h4>
+        <div id="chart-container-water"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
